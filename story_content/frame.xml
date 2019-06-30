@@ -6,6 +6,8 @@
     <layout name="npxnabnsnfns00001100101" font="Open Sans" controllayout="npxnabnsnfns00001100101" colorscheme="pxabnsnfns00001100101" string_table="pxabnsnfns00001100101" />
     <layout name="npnxnanbnsnfns00001100101" font="Open Sans" controllayout="npnxnanbnsnfns00001100101" colorscheme="pxabnsnfns00001100101" string_table="pxabnsnfns00001100101" />
     <layout name="pxabnsnfns00001100100" font="Open Sans" controllayout="pxabnsnfns00001100100" colorscheme="pxabnsnfns00001100101" string_table="pxabnsnfns00001100101" />
+    <layout name="pxnanbnsnfns00001100101" font="Open Sans" controllayout="pxnanbnsnfns00001100101" colorscheme="pxabnsnfns00001100101" string_table="pxabnsnfns00001100101" />
+    <layout name="pnxnanbsnfns00001100101" font="Open Sans" controllayout="pnxnanbsnfns00001100101" colorscheme="pxabnsnfns00001100101" string_table="pxabnsnfns00001100101" />
   </layouts>
   <control_options>
     <optiongroups>
@@ -58,7 +60,12 @@
       <optiongroup name="controls">
         <options>
           <option name="volume" value="true" />
-          <option name="seekbar" value="false" />
+          <option name="seekbar" value="false">
+            <options>
+              <option name="readonly" value="false" />
+              <option name="readonlyOnce" value="false" />
+            </options>
+          </option>
           <option name="pauseplay" value="false" />
           <option name="replay" value="false" />
           <option name="search" value="false" />
@@ -191,6 +198,52 @@
         </controls>
       </control>
       <control name="close_btn" enabled="false" />
+    </control_layout>
+    <control_layout name="pxnanbnsnfns00001100101">
+      <control name="volume" enabled="true" />
+      <control name="seekbar" enabled="false" />
+      <control name="replay" enabled="false" />
+      <control name="pauseplay" enabled="false" />
+      <control name="logo" enabled="false" />
+      <control name="previous" enabled="true" />
+      <control name="next" enabled="true" />
+      <control name="swipeleft" enabled="false" />
+      <control name="swiperight" enabled="false" />
+      <control name="submit" enabled="false" />
+      <control name="finish" enabled="false" />
+      <control name="submitall" enabled="false" />
+      <control name="resources" enabled="true" />
+      <control name="glossary" enabled="false" />
+      <control name="transcript" enabled="false" />
+      <control name="outline" enabled="true">
+        <controls>
+          <control name="search" enabled="false" />
+        </controls>
+      </control>
+      <control name="close_btn" enabled="true" />
+    </control_layout>
+    <control_layout name="pnxnanbsnfns00001100101">
+      <control name="volume" enabled="true" />
+      <control name="seekbar" enabled="false" />
+      <control name="replay" enabled="false" />
+      <control name="pauseplay" enabled="false" />
+      <control name="logo" enabled="false" />
+      <control name="previous" enabled="true" />
+      <control name="next" enabled="false" />
+      <control name="swipeleft" enabled="false" />
+      <control name="swiperight" enabled="false" />
+      <control name="submit" enabled="true" />
+      <control name="finish" enabled="false" />
+      <control name="submitall" enabled="false" />
+      <control name="resources" enabled="true" />
+      <control name="glossary" enabled="false" />
+      <control name="transcript" enabled="false" />
+      <control name="outline" enabled="true">
+        <controls>
+          <control name="search" enabled="false" />
+        </controls>
+      </control>
+      <control name="close_btn" enabled="true" />
     </control_layout>
   </control_layouts>
   <colorschemes>
